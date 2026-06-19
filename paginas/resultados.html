@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ganadores | Batalla de Talentos 2026</title>
+
+    <link rel="stylesheet" href="../css/categorias.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+
+    <!-- HERO -->
+    <header class="hero">
+
+        <div class="contenido">
+
+            <img src="../img/SENA.png" class="logo" alt="SENA">
+
+            <h1> GANADORES OFICIALES</h1>
+
+            <p>
+                Reconocimiento a los mejores talentos artísticos del SENA
+            </p>
+
+            <a href="../index.html" class="btn">
+                <i class="fa-solid fa-house"></i>
+                Volver al Inicio
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- GANADORES POR CATEGORÍA -->
+    <section class="categorias">
+
+        <h2>Ganadores por Categoría</h2>
+
+        <div class="grid">
+
+            <!-- CANTANTE -->
+            <div class="card">
+
+                <i class="fa-solid fa-microphone"></i>
+
+                <h3>Cantante</h3>
+
+                <img src="../img/cantante-4.png" alt="Cantante">
+
+                <p>Ilda Dolarte</p>
+
+            </div>
+
+            <!-- INTÉRPRETE -->
+            <div class="card">
+
+                <i class="fa-solid fa-music"></i>
+
+                <h3>Intérprete</h3>
+
+                <img src="../img/interprete-1.jpeg" alt="Intérprete">
+
+                <p>Yilder Rodriguez</p>
+
+            </div>
+
+            <!-- DANZA -->
+            <div class="card">
+
+                <i class="fa-solid fa-person-dress"></i>
+
+                <h3>Danza</h3>
+
+                <img src="../img/pr_danza4.png" alt="Danza">
+
+                <p>Valentina y Camila leon</p>
+
+            </div>
+
+            <!-- PINTURA -->
+            <div class="card">
+
+                <i class="fa-solid fa-palette"></i>
+
+                <h3>Pintura</h3>
+
+                <img src="../img/pintura-4.png" alt="Pintura">
+
+                <p>Wendy</p>
+
+            </div>
+
+            <!-- LITERATURA -->
+            <div class="card">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <h3>Literatura</h3>
+
+                <img src="../img/lector-3.jpeg" alt="Literatura">
+
+                <p>Kevin obando</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <script>
+        fetch('../includes/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+
+        fetch('../includes/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

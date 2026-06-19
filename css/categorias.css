@@ -1,0 +1,185 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --fondo:#07111F;
+    --secundario:#0F1E33;
+    --card:#142B4D;
+    --dorado:#D4A017;
+    --texto:#F5F5F5;
+    --gris:#94A3B8;
+}
+
+body{
+    background:var(--fondo);
+    color:var(--texto);
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* HERO */
+
+.hero{
+    min-height:70vh;
+
+    background:
+    linear-gradient(
+        rgba(7,17,31,.80),
+        rgba(7,17,31,.95)
+    ),
+    url('../img/fondo.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:40px;
+}
+
+.logo{
+    width:130px;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:var(--texto);
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:var(--gris);
+    font-size:1.2rem;
+}
+
+/* SECCIONES */
+
+.ganadores,
+.participantes{
+    padding:100px 10%;
+}
+
+.ganadores h2,
+.participantes h2{
+    text-align:center;
+    color:var(--dorado);
+    font-size:2.5rem;
+    margin-bottom:60px;
+}
+
+/* TOP 3 */
+
+.puesto{
+    background:var(--secundario);
+
+    border:1px solid rgba(212,160,23,.25);
+
+    border-radius:24px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    height:100%;
+}
+
+.puesto:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px rgba(212,160,23,.15);
+}
+
+.primero{
+    border:2px solid var(--dorado);
+}
+
+.puesto img{
+    width:160px;
+    height:160px;
+
+    border-radius:50%;
+    object-fit:cover;
+
+    border:4px solid var(--dorado);
+
+    margin-bottom:20px;
+}
+
+.puesto h3{
+    color:var(--dorado);
+    margin-bottom:10px;
+}
+
+.puesto p{
+    color:var(--gris);
+}
+
+/* PARTICIPANTES */
+
+.participante{
+    background:var(--secundario);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(212,160,23,.15);
+
+    transition:.4s;
+}
+
+.participante:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px rgba(212,160,23,.15);
+}
+
+.participante img{
+    width:100%;
+    height:320px;
+
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+.participante:hover img{
+    transform:scale(1.05);
+}
+
+.participante h3{
+    padding:25px;
+    text-align:center;
+    color:var(--texto);
+}
+
+.container,
+.row{
+    background:transparent !important;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .ganadores,
+    .participantes{
+        padding:70px 6%;
+    }
+
+    .puesto img{
+        width:130px;
+        height:130px;
+    }
+}
